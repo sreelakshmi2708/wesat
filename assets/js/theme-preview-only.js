@@ -4,112 +4,112 @@
 
 $('body').append(' ' +
 '<!-- CSS/JS Change Colors Menu / Theme Preview Only -->' +
-	'<div class="styler-trigger-cover"></div>' +
-	'<div class="color-styler-wrapper">' +
-		'<div class="color-styler">' +
-			'<div class="gear styler-trigger">' +
-				'<i class="fa fa-fw fa-cog fa-spin custom-spin"></i>' +
-			'</div>' +
-			'<div class="styler-menu-scroll-wrapper">' +
-				'<div class="styler-menu-scroll-scroller">' +
-					'<div class="styler-menu">' +
-						'<!-- <header>' +
-							'<h5 class="styler-title">Choose Your Colors</h5>' +
-						'</header> -->' +
-						'<div class="styler-header" style="background: #12233a; padding: 20px;">' +
-							'<h6 style="color: #ffffff; font-size: 1.2rem; text-align: center; margin-bottom: 15px;">Want <strong>Particle WordPress</strong>?</h6>' +
-							'<a href="https://www.previews.skilltechwebdesign.com/particle/" target="_blank">' +
-								'<img src="assets/images/theme-preivew-small.jpg" alt="">' +
-							'</a>' +
-							'<p style="color: #ffffff; font-size: 15px; text-align: center; margin-top: 20px;">Get it directly from our shop at 40% OFF. Use coupon code <strong>PARTICLE40OFF</strong></p>' +
-							'<a class="pa-button-primary pa-hvr-sweep-to-right" style="padding-left: 10px; padding-right: 10px;" href="https://www.previews.skilltechwebdesign.com/particle/" target="_blank"><i class="fa fa-external-link get-pa-wp"></i>GET PARTICLE WORDPRESS</a>' +
-							'<p style="color: #dedede; font-size: 14px; text-align: center; margin-top: 10px; margin-bottom: 10px;">on skilltechwebdesign.com</p>' +
-						'</div>' +
-						'<main>' +
-							'<div class="light-mode-panel">' +
-								'<div class="lm-header">' +
-									'<h6 style="color: #dedede; font-size: 1.2rem">Dark Mode Switch</h6>' +
-								'</div>' +
-								'<div class="lm-switch-container">' +
-									'<div class="lm-switch">' +
-										'<div class="lm-switch-back-light"></div>' +
-										'<div class="lm-switch-back-dark"></div>' +
-										'<span class="lm-button go-light"></span>' +
-										'<span class="lm-button go-dark"></span>' +
-										'<span class="lm-indicator light-on"></span>' +
-										'<span class="lm-indicator dark-on"></span>' +
-									'</div>' +
-								'</div>' +
-							'</div>' +
-							'<h6 style="color: #dedede; font-size: 1.2rem">Choose Your Colors</h6>' +
-							'<ul class="color-inputs">' +
-								'<li>' +
-									'<label>Primary Theme Color</label>' +
-									'<input id="theme-color-master" value="#7100B8" name="theme-color-master"/>' +
-								'</li>' +
-								'<li>' +
-									'<label>Primary Theme Color / Shade B</label>' +
-									'<input id="theme-color-master-b" value="#9300F5" name="theme-color-master-b"/>' +
-								'</li>' +
-								'<li>' +
-									'<label>Primary Theme Color / Shade C</label>' +
-									'<input id="theme-color-master-c" value="#B44AFF" name="theme-color-master-c"/>' +
-								'</li>' +
-								'<li>' +
-									'<label>Primary Theme Color / Shade D</label>' +
-									'<input id="theme-color-master-d" value="#d12bff" name="theme-color-master-d"/>' +
-								'</li>' +
-								'<li>' +
-									'<label>Secondary Theme Color</label>' +
-									'<input id="theme-color-secondary" value="#00f2ff" name="theme-color-secondary"/>' +
-								'</li>' +
-								'<li>' +
-									'<label>Secondary Theme Color / Shade B</label>' +
-									'<input id="theme-color-secondary-b" value="#00bbff" name="theme-color-secondary-b"/>' +
-								'</li>' +
-							'</ul>' +
-						'</main>' +
-						'<div class="styler-footer">' +
-							'<!-- Button trigger modal -->' +
-							'<a id="getCSSLauncher" href="#" class="pa-button-plain pa-hvr-sweep-to-right" data-toggle="modal" data-target="#codeModal">GET CSS</a>' +
-							'<a href="https://themeforest.net/item/particle-modern-tech-startup-html-template/20078383?ref=Skilltech" class="pa-button-primary pa-hvr-sweep-to-right" target="_blank">BUY NOW</a>' +
-						'</div>' +
-					'</div><!-- /.styler-menu -->' +
-				'</div><!-- /.styler-menu-scroll-scroller -->' +
-			'</div><!-- /.styler-menu-scroll-wrapper -->' +
-		'</div><!-- /.color-styler -->' +
-	'</div><!-- /.color-styler-wrapper -->' +
-'' +
-	'<!-- Modal / Theme Preview Only -->' +
-	'<div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">' +
-		'<div class="modal-dialog" role="document" style="width: 960px; max-width: 90%;">' +
-			'<div class="modal-content">' +
-			'<div class="modal-header" style="background-color: #24344a; color: white; border-bottom: 1px solid #41505f;">' +
-				'<div class="modal-header-heading">' +
-					'<h5 class="modal-title" id="codeModalLabel">Copy Your New CSS Color Styles</h5>' +
-				'</div>' +
-				'<div class="modal-header-menu">' +
-					'<button class="copyToClip pa-get-code-buttons pa-hvr-sweep-to-right" data-clipboard-target="#stylesForDwnLoad" title="Copy The Code">' +
-						'<i class="fa fa-clone"></i><span class="ctClip">Copy The Code</span>' +
-					'</button>' +
-					'<div class="copyDone unappeared"><p>Copied to Clipboard!<br>You can now paste over the code in<br><strong>particle-colors.css<strong></p></div>' +
-					'<!-- <button id="downloadLinkTop" class="pa-get-code-buttons pa-hvr-sweep-to-right" data-clipboard-target="#stylesForDwnLoad" title="Download as CSS file">' +
-						'<i class="fa fa-download"></i>' +
-					'</button> -->' +
-					'<button data-dismiss="modal" class="pa-get-code-buttons pa-hvr-sweep-to-right" data-clipboard-target="#stylesForDwnLoad" title="Close">' +
-						'<i class="fa fa-times"></i>' +
-					'</button>' +
-				'</div>' +
-			'</div>' +
-			'<div class="modal-body" style="background-color: #1f2937;">' +
-				'<div class="color-styles-copy">' +
-					'<pre style="color: #ebebeb;">' +
-						'<code id="stylesForDwnLoad"></code>' +
-					'</pre>' +
-				'</div>' +
-			'</div>' +
-		'</div>' +
-	'</div>');
+	// '<div class="styler-trigger-cover"></div>' +
+	// '<div class="color-styler-wrapper">' +
+	// 	'<div class="color-styler">' +
+	// 		'<div class="gear styler-trigger">' +
+	// 			'<i class="fa fa-fw fa-cog fa-spin custom-spin"></i>' +
+	// 		'</div>' +
+	// 		'<div class="styler-menu-scroll-wrapper">' +
+	// 			'<div class="styler-menu-scroll-scroller">' +
+	// 				'<div class="styler-menu">' +
+	// 					'<!-- <header>' +
+	// 						'<h5 class="styler-title">Choose Your Colors</h5>' +
+	// 					'</header> -->' +
+	// 					'<div class="styler-header" style="background: #12233a; padding: 20px;">' +
+	// 						'<h6 style="color: #ffffff; font-size: 1.2rem; text-align: center; margin-bottom: 15px;">Want <strong>Particle WordPress</strong>?</h6>' +
+	// 						'<a href="https://www.previews.skilltechwebdesign.com/particle/" target="_blank">' +
+	// 							'<img src="assets/images/theme-preivew-small.jpg" alt="">' +
+	// 						'</a>' +
+	// 						'<p style="color: #ffffff; font-size: 15px; text-align: center; margin-top: 20px;">Get it directly from our shop at 40% OFF. Use coupon code <strong>PARTICLE40OFF</strong></p>' +
+	// 						'<a class="pa-button-primary pa-hvr-sweep-to-right" style="padding-left: 10px; padding-right: 10px;" href="https://www.previews.skilltechwebdesign.com/particle/" target="_blank"><i class="fa fa-external-link get-pa-wp"></i>GET PARTICLE WORDPRESS</a>' +
+	// 						'<p style="color: #dedede; font-size: 14px; text-align: center; margin-top: 10px; margin-bottom: 10px;">on skilltechwebdesign.com</p>' +
+	// 					'</div>' +
+						// '<main>' +
+						// 	'<div class="light-mode-panel">' +
+						// 		'<div class="lm-header">' +
+						// 			'<h6 style="color: #dedede; font-size: 1.2rem">Dark Mode Switch</h6>' +
+						// 		'</div>' +
+						// 		'<div class="lm-switch-container">' +
+						// 			'<div class="lm-switch">' +
+						// 				'<div class="lm-switch-back-light"></div>' +
+						// 				'<div class="lm-switch-back-dark"></div>' +
+						// 				'<span class="lm-button go-light"></span>' +
+						// 				'<span class="lm-button go-dark"></span>' +
+						// 				'<span class="lm-indicator light-on"></span>' +
+						// 				'<span class="lm-indicator dark-on"></span>' +
+						// 			'</div>' +
+						// 		'</div>' +
+						// 	'</div>' +
+						// 	'<h6 style="color: #dedede; font-size: 1.2rem">Choose Your Colors</h6>' +
+						// 	'<ul class="color-inputs">' +
+						// 		'<li>' +
+						// 			'<label>Primary Theme Color</label>' +
+						// 			'<input id="theme-color-master" value="#7100B8" name="theme-color-master"/>' +
+						// 		'</li>' +
+						// 		'<li>' +
+						// 			'<label>Primary Theme Color / Shade B</label>' +
+						// 			'<input id="theme-color-master-b" value="#9300F5" name="theme-color-master-b"/>' +
+						// 		'</li>' +
+						// 		'<li>' +
+						// 			'<label>Primary Theme Color / Shade C</label>' +
+						// 			'<input id="theme-color-master-c" value="#B44AFF" name="theme-color-master-c"/>' +
+						// 		'</li>' +
+						// 		'<li>' +
+						// 			'<label>Primary Theme Color / Shade D</label>' +
+						// 			'<input id="theme-color-master-d" value="#d12bff" name="theme-color-master-d"/>' +
+						// 		'</li>' +
+						// 		'<li>' +
+						// 			'<label>Secondary Theme Color</label>' +
+						// 			'<input id="theme-color-secondary" value="#00f2ff" name="theme-color-secondary"/>' +
+						// 		'</li>' +
+						// 		'<li>' +
+						// 			'<label>Secondary Theme Color / Shade B</label>' +
+						// 			'<input id="theme-color-secondary-b" value="#00bbff" name="theme-color-secondary-b"/>' +
+						// 		'</li>' +
+						// 	'</ul>' +
+						// '</main>' +
+// 						'<div class="styler-footer">' +
+// 							'<!-- Button trigger modal -->' +
+// 							'<a id="getCSSLauncher" href="#" class="pa-button-plain pa-hvr-sweep-to-right" data-toggle="modal" data-target="#codeModal">GET CSS</a>' +
+// 							'<a href="https://themeforest.net/item/particle-modern-tech-startup-html-template/20078383?ref=Skilltech" class="pa-button-primary pa-hvr-sweep-to-right" target="_blank">BUY NOW</a>' +
+// 						'</div>' +
+// 					'</div><!-- /.styler-menu -->' +
+// 				'</div><!-- /.styler-menu-scroll-scroller -->' +
+// 			'</div><!-- /.styler-menu-scroll-wrapper -->' +
+// 		'</div><!-- /.color-styler -->' +
+// 	'</div><!-- /.color-styler-wrapper -->' +
+// '' +
+// 	'<!-- Modal / Theme Preview Only -->' +
+// 	'<div class="modal fade" id="codeModal" tabindex="-1" role="dialog" aria-labelledby="codeModalLabel" aria-hidden="true">' +
+// 		'<div class="modal-dialog" role="document" style="width: 960px; max-width: 90%;">' +
+// 			'<div class="modal-content">' +
+// 			'<div class="modal-header" style="background-color: #24344a; color: white; border-bottom: 1px solid #41505f;">' +
+// 				'<div class="modal-header-heading">' +
+// 					'<h5 class="modal-title" id="codeModalLabel">Copy Your New CSS Color Styles</h5>' +
+// 				'</div>' +
+// 				'<div class="modal-header-menu">' +
+// 					'<button class="copyToClip pa-get-code-buttons pa-hvr-sweep-to-right" data-clipboard-target="#stylesForDwnLoad" title="Copy The Code">' +
+// 						'<i class="fa fa-clone"></i><span class="ctClip">Copy The Code</span>' +
+// 					'</button>' +
+// 					'<div class="copyDone unappeared"><p>Copied to Clipboard!<br>You can now paste over the code in<br><strong>particle-colors.css<strong></p></div>' +
+// 					'<!-- <button id="downloadLinkTop" class="pa-get-code-buttons pa-hvr-sweep-to-right" data-clipboard-target="#stylesForDwnLoad" title="Download as CSS file">' +
+// 						'<i class="fa fa-download"></i>' +
+// 					'</button> -->' +
+// 					'<button data-dismiss="modal" class="pa-get-code-buttons pa-hvr-sweep-to-right" data-clipboard-target="#stylesForDwnLoad" title="Close">' +
+// 						'<i class="fa fa-times"></i>' +
+// 					'</button>' +
+// 				'</div>' +
+// 			'</div>' +
+// 			'<div class="modal-body" style="background-color: #1f2937;">' +
+// 				'<div class="color-styles-copy">' +
+// 					'<pre style="color: #ebebeb;">' +
+// 						'<code id="stylesForDwnLoad"></code>' +
+// 					'</pre>' +
+// 				'</div>' +
+// 			'</div>' +
+// 		'</div>' +
+// 	'</div>');
 
 function isItMobileDevice() {
 	var isMobile = false; //initiate as false

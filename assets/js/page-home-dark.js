@@ -120,13 +120,13 @@ $(document).ready(function () {
 	// Initiate typed.js text effect (done custom for each typed text effect)
 	$(".animated-text-effect").typed({ 
 		// Enter your texts here, these texts are applied to dark homepages
-		strings: ["Awesome Ineractive Effect^", "Click on the live effect!^", "Coolest Modern HTML Theme^"], 
+		strings: ["WESAT^", "Space Club^", "LBSITW^"], 
 		contentType: "text", 
-		typeSpeed: 30, 
+		typeSpeed: 80, 
 		loop: true, 
-		backDelay: 1200, 
+		backDelay: 1000, 
 		showCursor: true, 
-		startDelay: 3200, // PRELOADER -- comment-out this line if you stop using page preloader
+		startDelay: 2000, // PRELOADER -- comment-out this line if you stop using page preloader
 		cursorChar: "|" 
 	});
 

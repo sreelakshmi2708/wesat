@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 	// Initiate typed.js text effect (done custom for each typed text effect)
 	$(".animated-text-effect").typed({ 
-		strings: ["YouTube Videos^"], 
+		strings: ["Featured Newspapers^"], 
 		contentType: "text", 
 		typeSpeed: 30, 
 		loop: true, 

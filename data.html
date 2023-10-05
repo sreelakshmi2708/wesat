@@ -16,8 +16,8 @@
 	<meta property="og:image" content="assets/images/facebook-post-img-1200x630-2021.jpg"/>
 	<meta property="og:site_name" content="SkilltechWebDesign.com"/> -->
 
-	<title>Video</title>
-	
+	<title>DATA</title>
+
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<!-- Bootstrap CSS -->
@@ -55,6 +55,236 @@
 		gtag('config', 'UA-46362219-11');
 	</script>
 
+    <script>
+	
+// document.addEventListener("DOMContentLoaded", function () {
+//   const articlesPerPage = 3; // Number of articles to display per page
+//   const articles = document.querySelectorAll(".pa-blog-article-flex-wrapper");
+//   const paginationItems = document.querySelectorAll(".pa-pagination-item");
+//   let currentPage = 1;
+
+//   // Function to display articles for the current page
+//   // Function to display articles for the current page
+// function displayPage(pageNumber) {
+//   articles.forEach(function (article, index) {
+//     if (
+//       index >= (pageNumber - 1) * articlesPerPage &&
+//       index < pageNumber * articlesPerPage
+//     ) {
+//       article.style.display = "block";
+//     } else {
+//       article.style.display = "none";
+//     }
+//   });
+  
+//   // Ensure that images are displayed when articles are shown
+//   articles.forEach(function (article) {
+//     if (article.style.display === "block") {
+//       article.querySelector(".pa-in-content-post-image").style.display = "block";
+//     } else {
+//       article.querySelector(".pa-in-content-post-image").style.display = "none";
+//     }
+//   });
+// }
+
+
+//   // Function to update active page in pagination
+//   function updateActivePage() {
+//     paginationItems.forEach(function (item, index) {
+//       if (index === currentPage) {
+//         item.classList.add("pa-pagination-active");
+//       } else {
+//         item.classList.remove("pa-pagination-active");
+//       }
+//     });
+//   }
+
+//   // Event listener for previous page button
+//   paginationItems[0].addEventListener("click", function (e) {
+//     e.preventDefault();
+//     if (currentPage > 1) {
+//       currentPage--;
+//       displayPage(currentPage);
+//       updateActivePage();
+//     }
+//   });
+
+//   // Event listener for next page button
+//   paginationItems[paginationItems.length - 1].addEventListener("click", function (e) {
+//     e.preventDefault();
+//     if (currentPage < Math.ceil(articles.length / articlesPerPage)) {
+//       currentPage++;
+//       displayPage(currentPage);
+//       updateActivePage();
+//     }
+//   });
+
+//   // Event listeners for page numbers
+//   for (let i = 1; i < paginationItems.length - 1; i++) {
+//     paginationItems[i].addEventListener("click", function (e) {
+//       e.preventDefault();
+//       currentPage = i;
+//       displayPage(currentPage);
+//       updateActivePage();
+//     });
+//   }
+
+//   // Initialize by displaying the first page
+//   displayPage(currentPage);
+//   updateActivePage();
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const articlesPerPage = 3; // Number of articles to display per page
+  const articles = document.querySelectorAll(".pa-blog-article-flex-wrapper");
+  const paginationItems = document.querySelectorAll(".pa-pagination-item");
+  let currentPage =1;
+
+  // Function to display articles for the current page
+  function displayPage(pageNumber) {
+    articles.forEach(function (article, index) {
+      if (
+        index >= (pageNumber - 1) * articlesPerPage &&
+        index < pageNumber * articlesPerPage
+      ) {
+        article.style.display = "block";
+      } else {
+        article.style.display = "none";
+      }
+    });
+    
+    // Ensure that images are displayed when articles are shown
+    articles.forEach(function (article) {
+      if (article.style.display === "block") {
+        article.querySelector(".pa-in-content-post-image").style.display = "block";
+      } else {
+        article.querySelector(".pa-in-content-post-image").style.display = "none";
+      }
+    });
+  }
+
+  // Function to update active page in pagination
+  function updateActivePage() {
+    paginationItems.forEach(function (item, index) {
+      if (index === currentPage) {
+        item.classList.add("pa-pagination-active");
+      } else {
+        item.classList.remove("pa-pagination-active");
+      }
+    });
+  }
+
+  // Event listener for previous page button
+  paginationItems[0].addEventListener("click", function (e) {
+    e.preventDefault();
+    if (currentPage > 1) {
+      currentPage--;
+      displayPage(currentPage);
+      updateActivePage();
+    }
+  });
+
+  // Event listener for next page button
+  paginationItems[paginationItems.length - 1].addEventListener("click", function (e) {
+    e.preventDefault();
+    if (currentPage < Math.ceil(articles.length / articlesPerPage)) {
+      currentPage++;
+      displayPage(currentPage);
+      updateActivePage();
+    }
+  });
+
+  // Event listeners for page numbers
+  for (let i = 1; i < paginationItems.length - 1; i++) {
+    paginationItems[i].addEventListener("click", function (e) {
+      e.preventDefault();
+      currentPage = i;
+      displayPage(currentPage);
+      updateActivePage();
+    });
+  }
+
+  // Initialize by displaying the first page
+  displayPage(currentPage);
+  updateActivePage();
+});
+
+
+
+</script>
+
+<style>
+		/* Style the navigation container and the list */
+.navigation.pagination {
+    display: flex;
+    justify-content: center;
+	width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #17212E; /* Set the background color as needed */
+    padding: 15px 0; /* Add some padding for spacing */
+}  
+
+.pa-pagination-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the pagination items */
+.pa-pagination-item {
+    margin: 0 5px; /* Add some margin between items */
+	padding-top: 5px;
+	
+}
+
+.pa-pagination-link {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 5px 10px;
+	padding-top: 5px;
+
+    border: 1px solid whitesmoke; /* Add a border to separate items */
+    border-radius: 4px;
+}
+
+/* Style the active item */
+.pa-pagination-active .pa-pagination-link {
+    background-color: whitesmoke;
+    color: #333;
+}
+
+/* Style the previous and next links */
+.pa-pagination-prev a,
+.pa-pagination-next a {
+    padding: 5px 10px;
+	padding-top: 5px;
+
+    background-color: whitesmoke;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Hover styles for previous and next links */
+.pa-pagination-prev a:hover,
+.pa-pagination-next a:hover {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+/* Style the screen reader text (optional) */
+.screen-reader-text {
+    display: none;
+}
+
+	</style>
 </head>
 
 <body class="pa-blog pa-dark-mode">
@@ -208,9 +438,9 @@
 
 		<!-- Hero Section
 		================================================== -->
-		<section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back position-relative" style="background-image: url(assets/images/news.jpg);">
+		<section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back position-relative" style="background-image: url(assets/images/hero-background.jpg);">
 
-			<!-- <div class="pa-absolute-fill pa-gradient-back-v1"></div> -->
+			<div class="pa-absolute-fill pa-gradient-back-v1"></div>
 
 			<div class="container pa-supercontainer text-left">
 				<div class="row pa-hero-typed-text">
@@ -220,12 +450,12 @@
 								<span class="typed-cursor">|</span>
 							</span>
 						</div>
-						<!-- <h4 class="pa-h4-v1 pa-bright">Videos</h4> -->
+						<h4 class="pa-h4-v1 pa-bright">Very slick blogatorium with particle engine</h4>
 					</div>
 				</div>
 			</div>
 
-		</section> 
+		</section>
 		<!-- /.pa-hero -->
 
 			
@@ -251,19 +481,19 @@
 			<div class="container pa-supercontainer">
 				<div class="row position-relative pa-ticker-wrapper">
 
-					<div class="pa-absolute-fill pa-custom-gradient pa-gradient-back-v2"></div>  -->
+					<div class="pa-absolute-fill pa-custom-gradient pa-gradient-back-v2"></div> -->
 
 					<!-- News Ticker -->
 
-					 <!-- <div class="col-12 col-lg-9">
-						 <div id="blogTickerCarousel" class="carousel slide vert" data-ride="carousel">
+					<!-- <div class="col-12 col-lg-9">
+						<div id="blogTickerCarousel" class="carousel slide vert" data-ride="carousel">
 							<div class="carousel-inner">
 
 								<div class="carousel-item active">
 									<article class="post">
 										<h3 class="entry-title pa-ticker-title"><a href="dark-single-sidebar-right.html" rel="bookmark">VR social productivity app Bigscreen raises $3M in round led by Andreessen Horowitz</a></h3>
 									</article>
-								</div> 
+								</div>
 								<div class="carousel-item">
 									<article class="post">
 										<h3 class="entry-title pa-ticker-title"><a href="dark-single-sidebar-right.html" rel="bookmark">A unique well rounded design with clean code and meticulously planned details take Particle to next level</a></h3>
@@ -285,7 +515,7 @@
 								<span class="sr-only">Next</span>
 							</a>
 						</div>
-					</div>  -->
+					</div> -->
 
 					<!-- Search -->
 
@@ -293,9 +523,9 @@
 
 						<div class="widget widget_search pa-in-ticker">
 							<div class="pa-widget-inner mb-0">
-								<form role="search" method="get" class="search-form" action="#" autocomplete="off"> 
-									 <input autocomplete="false" name="hidden" type="text" style="display:none;"> 
-									 <label style="position: relative;">
+								<form role="search" method="get" class="search-form" action="#" autocomplete="off"> -->
+									<!-- <input autocomplete="false" name="hidden" type="text" style="display:none;"> -->
+									<!-- <label style="position: relative;">
 										<span class="screen-reader-text">Search for:</span>
 										<input type="search" class="search-field" placeholder="" value="" name="s">
 									</label>
@@ -307,11 +537,11 @@
 							</div>
 						</div>
 
-					</div> -->
+					</div>
 
-				<!-- </div>
+				</div>
 			</div>
-		</section>  -->
+		</section> -->
 		<!-- /.pa-blog-ticker -->
 
 			
@@ -324,7 +554,7 @@
 				<!-- <div class="row"> -->
 
 					<!-- Featured - Headliner Post -->
-					<!-- <div class="col-12 col-lg-6">  -->
+					<!-- <div class="col-12 col-lg-6"> -->
 						<!-- Article -->
 						<!-- <div class="pa-blog-article-flex-wrapper pa-featured pa-featured-headliner">
 							<div class="pa-article-magazine">
@@ -346,16 +576,16 @@
 									</div>
 
 								</article>
-							</div>
-						</div>pa-blog-article-flex-wrapper 
+							</div> -->
+						<!-- </div> pa-blog-article-flex-wrapper
 					</div> -->
 
 					<!-- Featured - Regular featured posts -->
-					 <!-- <div class="col-12 col-lg-6">
+					<!-- <div class="col-12 col-lg-6">
 						<div class="row d-flex">
 							<div class="col-12 col-md-6"> -->
 								<!-- Article -->
-								 <!-- <div class="pa-blog-article-flex-wrapper pa-featured pa-featured-regular">
+								<!-- <div class="pa-blog-article-flex-wrapper pa-featured pa-featured-regular">
 									<div class="pa-article-magazine">
 										<article class="post type-post format-standard has-post-thumbnail hentry">
 
@@ -371,7 +601,7 @@
 														<p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time>
 													</div>
 												</div>
-											</div> 
+											</div>
 
 											<header class="entry-header">
 												<h3 class="pa-h3-blog-feed-title-font entry-title"><a href="dark-single-sidebar-right.html" rel="bookmark">A unique well rounded design with clean code and meticulously planned details take Particle to next level</a></h3>
@@ -379,17 +609,17 @@
 
 											<div class="post-excerpt">
 												<p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
-												 <!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
-											 <!-- </div>
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
+											<!-- </div>
 
 										</article>
-									</div>
-								</div>pa-blog-article-flex-wrapper 
-							</div>   -->
-							<!-- <div class="col-12 col-md-6">  -->
+									</div> -->
+								<!-- </div>  pa-blog-article-flex-wrapper -->
+							<!-- </div>
+							<div class="col-12 col-md-6"> -->
 								<!-- Article -->
-								 <!-- <div class="pa-blog-article-flex-wrapper pa-featured pa-featured-regular">
-									<div class="pa-article-magazine">
+								<!-- <div class="pa-blog-article-flex-wrapper pa-featured pa-featured-regular"> -->
+									<!-- <div class="pa-article-magazine">
 										<article class="post type-post format-standard has-post-thumbnail hentry">
 
 											<div class="post-image">
@@ -404,24 +634,24 @@
 														<p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time>
 													</div>
 												</div>
-											</div> 
+											</div>
 
 											<header class="entry-header">
 												<h3 class="pa-h3-blog-feed-title-font entry-title"><a href="dark-single-sidebar-right.html" rel="bookmark">Clean code HTML Theme ready for 2021 and beautiful on all devices including small and large</a></h3>
-											</header>
+											</header> -->
 
-											<div class="post-excerpt">
-												<p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> 
-												<a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> 
-											 </div>
+											<!-- <div class="post-excerpt">
+												<p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
+											<!-- </div>
 
 										</article>
-									</div>
-								 </div> pa-blog-article-flex-wrapper  -->
-							 <!-- </div> -->
-						<!-- </div>
+									</div> -->
+								<!-- </div>pa-blog-article-flex-wrapper
+							</div>
+						</div>
 					</div>
-				</div>   -->
+				</div> -->
 
 				<!-- Ads Slot -->
 				<!-- <div class="row">
@@ -437,14 +667,14 @@
 				<!-- Decoration -->
 				<!-- <hr class="pa-divider pa-gradient-back-v2 mb-4">
 
-			</div> -->
-		<!-- </section> -->
+			</div>
+		</section> -->
 		<!-- /.pa-blog-featured -->
 
-		
+			
 		<!-- Main - Blog Feed and Sidebar
 		================================================== -->
-		<section class="pa-blog-content pa-blog-main-content pa-blog-feed ">
+		<section class="pa-blog-content pa-blog-main-content pa-blog-feed pa-blog-style-v2-stretched no_sidebar">
 			<div class="container pa-supercontainer">
 				<div class="row">
 				
@@ -465,33 +695,32 @@
 								<div class="pa-article-magazine">
 									<article class="post type-post format-standard has-post-thumbnail hentry">
 
-										<div class="post-image"style="width:376px ;height:284px">
+										<div class="post-image">
 											<i class="fa pa-pformat-icon fa-pencil"></i>
 											<div class="post-image-inner">
-												<a href="https://www.youtube.com/embed/Sjfr2xHnJWI?si=5Vs5tLMQ2miiCVbE" >
-													<div class="pa-in-content-post-image"><iframe width=376px height=284px src="https://www.youtube.com/embed/Sjfr2xHnJWI?si=5Vs5tLMQ2miiCVbE"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/12-09-23UVI.png);"></div>
 												</a>
-												<!-- <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a> -->
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
 											</div>
 										</div>
 
-										 <div class="pa-post-info">
+										<div class="pa-post-info">
 											<div class="pa-blog-feed-top-metas">
-												<p></p> &nbsp;<a href="https://www.youtube.com/embed/Sjfr2xHnJWI?si=5Vs5tLMQ2miiCVbE"  title="DD News" rel="author"></a></p><time>27/09/2023</time>
-												 <div class="clearfix"></div> 
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
 												<div class="pa-blog-tags">
-													<h3 class="pa-h3-blog-feed-title-font entry-title">DD NEWS</h3>
-														<!-- <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
+													<!-- <p><a href="#">UV INDEX</a>  </p> -->
 												</div>										
 											</div>
 
-											 <!-- <header class="entry-header"> 
-												 <h3 class="pa-h3-blog-feed-title-font entry-title">MATHRUBHUMI</h3>
-											</header>   -->
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">UV INDEX</h3>
+											</header>
 
 											<div class="post-excerpt">
-												<!-- <p></p>   -->
-												<a class="moretag pa-hvr-sweep-to-right" href="https://www.youtube.com/embed/Sjfr2xHnJWI?si=5Vs5tLMQ2miiCVbE" >FULL VIDEO</a>
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
 											</div>
 										</div>
 										
@@ -505,38 +734,37 @@
 							================================================== -->
 							<div class="pa-blog-article-flex-wrapper">
 								<div class="pa-article-magazine">
-									<article class="post type-post format-standard has-post-thumbnail hentry">
+									<article class="post type-post format-video has-post-thumbnail hentry">
 
-										<div class="post-image"style="width:376px ;height:284px">
+										<div class="post-image">
 											<i class="fa pa-pformat-icon fa-pencil"></i>
 											<div class="post-image-inner">
-												<a href="https://www.youtube.com/embed/dCvPEhujrGc?si=2FZLkWdDRDKYwjVp">
-													<div class="pa-in-content-post-image"><iframe width=376px height=284px src="https://www.youtube.com/embed/dCvPEhujrGc?si=2FZLkWdDRDKYwjVp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/12uv.png);"></div>
 												</a>
-												<!-- <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a> -->
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
 											</div>
 										</div>
 
-										 <div class="pa-post-info">
+										<div class="pa-post-info">
 											<div class="pa-blog-feed-top-metas">
-												<p></p> &nbsp;<a href="https://www.youtube.com/embed/dCvPEhujrGc?si=2FZLkWdDRDKYwjVp" title="Mathrubhumi" rel="author"></a></p><time>19/09/2023</time>
-												 <div class="clearfix"></div> 
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
 												<div class="pa-blog-tags">
-													<h3 class="pa-h3-blog-feed-title-font entry-title">MATHRUBHUMI NEWS</h3>
-														<!-- <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
+													<!-- <p><a href="#">News</a>, <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
 												</div>										
 											</div>
 
-											 <!-- <header class="entry-header"> 
-												 <h3 class="pa-h3-blog-feed-title-font entry-title">MATHRUBHUMI</h3>
-											</header>   -->
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;" >UV POWER: UNIT=W/m²</h3>
+											</header>
 
 											<div class="post-excerpt">
-												<!-- <p></p>   -->
-												<a class="moretag pa-hvr-sweep-to-right" href="https://www.youtube.com/embed/dCvPEhujrGc?si=2FZLkWdDRDKYwjVp">FULL VIDEO</a>
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
 											</div>
 										</div>
-										
+
 									</article>
 								</div>
 							</div>
@@ -547,38 +775,37 @@
 							================================================== -->
 							<div class="pa-blog-article-flex-wrapper">
 								<div class="pa-article-magazine">
-									<article class="post type-post format-standard has-post-thumbnail hentry">
+									<article class="post type-post format-audio has-post-thumbnail hentry">
 
-										<div class="post-image"style="width:376px ;height:284px">
-											<i class="fa pa-pformat-icon fa-pencil"></i>
+										<div class="post-image">
+											<i class="fa pa-pformat-icon fa-pencil"></i>											
 											<div class="post-image-inner">
-												<a href="https://www.youtube.com/embed/pAFv8PrqiUI?si=1Pew8fBVIImis5f8">
-													<div class="pa-in-content-post-image"><iframe width=376px height=284px src="https://www.youtube.com/embed/pAFv8PrqiUI?si=1Pew8fBVIImis5f8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/12Si.png);"></div>
 												</a>
-												<!-- <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a> -->
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
 											</div>
 										</div>
 
-										 <div class="pa-post-info">
+										<div class="pa-post-info">
 											<div class="pa-blog-feed-top-metas">
-												<p></p> &nbsp;<a href="https://www.youtube.com/embed/pAFv8PrqiUI?si=1Pew8fBVIImis5f8" title="Asianet News" rel="author"></a></p><time>17/09/2023</time>
-												 <div class="clearfix"></div> 
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
 												<div class="pa-blog-tags">
-													<h3 class="pa-h3-blog-feed-title-font entry-title">ASIANET NEWS</h3>
-														<!-- <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
+													<!-- <p><a href="#">News</a>, <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
 												</div>										
 											</div>
 
-											 <!-- <header class="entry-header"> 
-												 <h3 class="pa-h3-blog-feed-title-font entry-title">MATHRUBHUMI</h3>
-											</header>   -->
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">SOLAR IRRADIANCE: UNIT=W/m²</h3>
+											</header>
 
 											<div class="post-excerpt">
-												<!-- <p></p>   -->
-												<a class="moretag pa-hvr-sweep-to-right" href="https://www.youtube.com/embed/pAFv8PrqiUI?si=1Pew8fBVIImis5f8">FULL VIDEO</a>
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
 											</div>
 										</div>
-										
+
 									</article>
 								</div>
 							</div>
@@ -587,86 +814,166 @@
 
 							<!-- Ads Slot
 							================================================== -->
-							<!-- <div class="pa-ads"> -->
-								<!-- <img alt="" src="assets/images/sample-slot-3.jpg"> -->
-							<!-- </div> -->
+							<!-- <div class="pa-ads">
+								<img alt="" src="assets/images/sample-slot-3.jpg">
+							</div> -->
 							<!-- /.pa-ads -->
 
-
+                           
 							<!-- Article
 							================================================== -->
 							<div class="pa-blog-article-flex-wrapper">
 								<div class="pa-article-magazine">
-									<article class="post type-post format-standard has-post-thumbnail hentry">
+									<article class="post type-post format-audio has-post-thumbnail hentry">
 
-										<div class="post-image"style="width:376px ;height:284px">
-											<i class="fa pa-pformat-icon fa-pencil"></i>
+										<div class="post-image">
+											<i class="fa pa-pformat-icon fa-pencil"></i>											
 											<div class="post-image-inner">
-												<a href="https://www.youtube.com/embed/aL1H9whuw58?si=WPaTApaS4jPY9kN1">
-													<div class="pa-in-content-post-image"><iframe width=376px height=284px src="https://www.youtube.com/embed/aL1H9whuw58?si=WPaTApaS4jPY9kN1"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/uvi16.png);"></div>
 												</a>
-												<!-- <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a> -->
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
 											</div>
 										</div>
 
-										 <div class="pa-post-info">
+										<div class="pa-post-info">
 											<div class="pa-blog-feed-top-metas">
-												<p></p> &nbsp;<a href="https://www.youtube.com/embed/aL1H9whuw58?si=WPaTApaS4jPY9kN1" title="QNews" rel="author"></a></p><time>14/09/2023</time>
-												 <div class="clearfix"></div> 
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
 												<div class="pa-blog-tags">
-													<h3 class="pa-h3-blog-feed-title-font entry-title">Q NEWS</h3>
-														<!-- <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
+													<!-- <p><a href="#">News</a>, <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
 												</div>										
 											</div>
 
-											 <!-- <header class="entry-header"> 
-												 <h3 class="pa-h3-blog-feed-title-font entry-title">MATHRUBHUMI</h3>
-											</header>   -->
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">UV INDEX</h3>
+											</header>
 
 											<div class="post-excerpt">
-												<!-- <p></p>   -->
-												<a class="moretag pa-hvr-sweep-to-right" href="https://www.youtube.com/embed/aL1H9whuw58?si=WPaTApaS4jPY9kN1">FULL VIDEO</a>
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
 											</div>
 										</div>
-										
+
 									</article>
 								</div>
-							</div>	<!-- /.pa-blog-article-flex-wrapper -->
+							</div>
+							<!-- /.pa-blog-article-flex-wrapper -->
 
 
 							<!-- Article
 							================================================== -->
 							<div class="pa-blog-article-flex-wrapper">
 								<div class="pa-article-magazine">
-									<article class="post type-post format-standard has-post-thumbnail hentry">
+									<article class="post type-post format-audio has-post-thumbnail hentry">
 
-										<div class="post-image"style="width:376px ;height:284px">
-											<i class="fa pa-pformat-icon fa-pencil"></i>
+										<div class="post-image">
+											<i class="fa pa-pformat-icon fa-pencil"></i>											
 											<div class="post-image-inner">
-												<a href="https://www.youtube.com/embed/ccU997YXBKI?si=1W8oIxigrnY9ARmG">
-													<div class="pa-in-content-post-image"><iframe width=376px height=284px src="https://www.youtube.com/embed/ccU997YXBKI?si=1W8oIxigrnY9ARmG"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/uvp16.png);"></div>
 												</a>
-												<!-- <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a> -->
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
 											</div>
 										</div>
 
-										 <div class="pa-post-info">
+										<div class="pa-post-info">
 											<div class="pa-blog-feed-top-metas">
-												<p></p> &nbsp;<a href="https://www.youtube.com/embed/ccU997YXBKI?si=1W8oIxigrnY9ARmG" title="News18" rel="author"></a></p><time>14/09/2023</time>
-												 <div class="clearfix"></div> 
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
 												<div class="pa-blog-tags">
-													<h3 class="pa-h3-blog-feed-title-font entry-title">NEWS18</h3>
-														<!-- <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
+													<!-- <p><a href="#">News</a>, <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
 												</div>										
 											</div>
 
-											 <!-- <header class="entry-header"> 
-												 <h3 class="pa-h3-blog-feed-title-font entry-title">MATHRUBHUMI</h3>
-											</header>   -->
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">UV POWER: UNIT=W/m²</h3>
+											</header>
 
 											<div class="post-excerpt">
-												<!-- <p></p>   -->
-												<a class="moretag pa-hvr-sweep-to-right" href="https://www.youtube.com/embed/ccU997YXBKI?si=1W8oIxigrnY9ARmG">FULL VIDEO</a>
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
+											</div>
+										</div>
+
+									</article>
+								</div>
+							</div>
+							<!-- /.pa-blog-article-flex-wrapper -->
+
+
+							<!-- Article
+							================================================== -->
+							<div class="pa-blog-article-flex-wrapper">
+								<div class="pa-article-magazine">
+									<article class="post type-post format-audio has-post-thumbnail hentry">
+
+										<div class="post-image">
+											<i class="fa pa-pformat-icon fa-pencil"></i>											
+											<div class="post-image-inner">
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/si16.png);"></div>
+												</a>
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
+											</div>
+										</div>
+
+										<div class="pa-post-info">
+											<div class="pa-blog-feed-top-metas">
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
+												<div class="pa-blog-tags">
+													<!-- <p><a href="#">News</a>, <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
+												</div>										
+											</div>
+
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">SOLAR IRRADIANCE: UNIT=W/m²</h3>
+											</header>
+
+											<div class="post-excerpt">
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
+											</div>
+										</div>
+
+									</article>
+								</div>
+							</div>
+							<!-- /.pa-blog-article-flex-wrapper -->
+					
+							<!-- Article
+							================================================== -->
+							<div class="pa-blog-article-flex-wrapper">
+								<div class="pa-article-magazine">
+									<article class="post type-post format-standard has-post-thumbnail hentry">
+
+										<div class="post-image">
+											<i class="fa pa-pformat-icon fa-pencil"></i>
+											<div class="post-image-inner">
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/uvi17.png);"></div>
+												</a>
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
+											</div>
+										</div>
+
+										<div class="pa-post-info">
+											<div class="pa-blog-feed-top-metas">
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
+												<div class="pa-blog-tags">
+													<!-- <p><a href="#">UV INDEX</a>  </p> -->
+												</div>										
+											</div>
+
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">UV INDEX</h3>
+											</header>
+
+											<div class="post-excerpt">
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
 											</div>
 										</div>
 										
@@ -682,59 +989,11 @@
 								<div class="pa-article-magazine">
 									<article class="post type-post format-standard has-post-thumbnail hentry">
 
-										<div class="post-image"style="width:376px ;height:284px">
+										<div class="post-image">
 											<i class="fa pa-pformat-icon fa-pencil"></i>
 											<div class="post-image-inner">
-												<a href="https://www.youtube.com/embed/w6I-xjEqgew?si=X3eOeZ-BiPYoTpFj">
-													<div class="pa-in-content-post-image"><iframe width=376px height=284px src="https://www.youtube.com/embed/w6I-xjEqgew?si=X3eOeZ-BiPYoTpFj"title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-												</a>
-												<!-- <a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a> -->
-											</div>
-										</div>
-
-										 <div class="pa-post-info">
-											<div class="pa-blog-feed-top-metas">
-												<p></p> &nbsp;<a href="https://www.youtube.com/embed/w6I-xjEqgew?si=X3eOeZ-BiPYoTpFj" title="MediaOne" rel="author"></a></p><time>14/09/2023</time>
-												 <div class="clearfix"></div> 
-												<div class="pa-blog-tags">
-													<h3 class="pa-h3-blog-feed-title-font entry-title">MEDIA ONE</h3>
-														<!-- <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p> -->
-												</div>										
-											</div>
-
-											 <!-- <header class="entry-header"> 
-												 <h3 class="pa-h3-blog-feed-title-font entry-title">MATHRUBHUMI</h3>
-											</header>   -->
-
-											<div class="post-excerpt">
-												<!-- <p></p>   -->
-												<a class="moretag pa-hvr-sweep-to-right" href="https://www.youtube.com/embed/w6I-xjEqgew?si=X3eOeZ-BiPYoTpFj">FULL VIDEO</a>
-											</div>
-										</div>
-										
-									</article>
-								</div>
-							</div>	
-							<!-- /.pa-blog-article-flex-wrapper -->
-
-
-							<!-- Article
-							================================================== -->
-							
-							<!-- /.pa-blog-article-flex-wrapper -->
-
-
-							<!-- Article
-							================================================== -->
-							<!-- <div class="pa-blog-article-flex-wrapper">
-								<div class="pa-article-magazine">
-									<article class="post type-post format-audio has-post-thumbnail hentry">
-
-										<div class="post-image">
-											<i class="fa pa-pformat-icon fa-headphones"></i>
-											<div class="post-image-inner">
-												<a href="dark-single-sidebar-right.html">
-													<div class="pa-in-content-post-image" style="background-image: url(assets/images/demo-post-10-featured-image-1024x683.jpg);"></div>
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/uvp17.png);"></div>
 												</a>
 												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
 											</div>
@@ -742,26 +1001,67 @@
 
 										<div class="pa-post-info">
 											<div class="pa-blog-feed-top-metas">
-												<p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time>
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
 												<div class="clearfix"></div>
 												<div class="pa-blog-tags">
-													<p><a href="#">News</a>, <a href="#">Features</a>, <a href="#">Technology news</a>, <a href="#">Particle category</a>, <a href="#">Another category</a></p>
+													<!-- <p><a href="#">UV INDEX</a>  </p> -->
 												</div>										
 											</div>
 
 											<header class="entry-header">
-												<h3 class="pa-h3-blog-feed-title-font entry-title"><a href="dark-single-sidebar-right.html" rel="bookmark">VR social productivity app Bigscreen raises $3M in round led by Andreessen Horowitz</a></h3>
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">UV POWER: UNIT=W/m²</h3>
 											</header>
 
 											<div class="post-excerpt">
-												<p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p>
-												<a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a>
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
+											</div>
+										</div>
+										
+									</article>
+								</div>
+							</div>
+							<!-- /.pa-blog-article-flex-wrapper -->
+
+
+							<!-- Article
+							================================================== -->
+							<div class="pa-blog-article-flex-wrapper">
+								<div class="pa-article-magazine">
+									<article class="post type-post format-standard has-post-thumbnail hentry">
+
+										<div class="post-image">
+											<i class="fa pa-pformat-icon fa-pencil"></i>
+											<div class="post-image-inner">
+												<a href="#">
+													<div class="pa-in-content-post-image" style="background-image: url(assets/images/si17.png);"></div>
+												</a>
+												<a class="post-comments-badge-link" href="#"><i class="fa fa-comments"></i> 0</a>
 											</div>
 										</div>
 
+										<div class="pa-post-info">
+											<div class="pa-blog-feed-top-metas">
+												<!-- <p>by &nbsp;<a href="#" title="Posts by Skilltech Admin" rel="author">Skilltech Admin</a></p><time>2021-09-27</time> -->
+												<div class="clearfix"></div>
+												<div class="pa-blog-tags">
+													<!-- <p><a href="#">UV INDEX</a>  </p> -->
+												</div>										
+											</div>
+
+											<header class="entry-header">
+												<h3 class="pa-h3-blog-feed-title-font entry-title" style="color:whitesmoke;">SOLAR IRRADIANCE: UNIT=W/m²</h3>
+											</header>
+
+											<div class="post-excerpt">
+												<!-- <p>This is an example of how well designed layout cleans the page up and looks amazing on modern displays and devices. A splendid html template witness superior design.</p> -->
+												<!-- <a class="moretag pa-hvr-sweep-to-right" href="dark-single-sidebar-right.html">Full story</a> -->
+											</div>
+										</div>
+										
 									</article>
 								</div>
-							</div> -->
+							</div>
 							<!-- /.pa-blog-article-flex-wrapper -->
 
 						</div>
@@ -770,18 +1070,31 @@
 
 						<!-- Pagination
 						================================================== -->
-						<!-- <nav class="navigation pagination" role="navigation" aria-label="Posts">
+						
+						<nav class="navigation pagination" role="navigation" aria-label="Posts" style="color: whitesmoke;">
 							<h2 class="screen-reader-text">Posts navigation</h2>
-							<div class="nav-links">
-								<a class="prev page-numbers" href="#"><i class="fa fa-caret-left"></i></a>
-								<a class="page-numbers" href="#">1</a>
-								<span aria-current="page" class="page-numbers current">2</span>
-								<a class="page-numbers" href="#">3</a>
-								<a class="page-numbers" href="#">4</a>
-								<a class="page-numbers" href="#">5</a>
-								<a class="next page-numbers" href="#"><i class="fa fa-caret-right"></i></a>
-							</div>
-						</nav> -->
+							<div class="nav-links" style="color: whitesmoke;">
+								<div class="pa-pagination">
+									<ul class="pa-pagination-list">
+									   <li class="pa-pagination-item pa-pagination-prev"><a href="#" class="pa-pagination-link">&laquo; Prev</a></li>
+									  <li class="pa-pagination-item pa-pagination-active"><span class="pa-pagination-link">12-09-23</span></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">16-09-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">17-09-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">18-09-23</a></li>
+									  <!-- <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">19-09-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">24-09-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">25-09-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">26-09-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">27-09-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">1-10-23</a></li>
+									  <li class="pa-pagination-item"><a href="#" class="pa-pagination-link">2-10-23</a></li>  -->
+									  <li class="pa-pagination-item pa-pagination-next"><a href="#" class="pa-pagination-link">Next &raquo;</a></li>
+									</ul>
+								  </div>
+								  
+						</div>
+						</nav>
+						
 						<!-- /nav.pagination -->
 						
 					</div>
@@ -802,13 +1115,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 text-center my-2 pt-5 pb-4">
-						<p>Copyright © 2023 - <a href="#" target="_blank">WESAT</a></p>					
+						<p>Copyright © 2023 - <a href="#" target="_blank">WESAT</a></p>
+					</div>
 				</div>
 			</div>
 			<div class="pa-back-to-top-wrap">
 				<a class="pa-back-to-top" href="#top"><span class="pa-back-to-top"></span></a>
 			</div>
-		</footer> 
+		</footer>
 
 	</div>
 	<!-- /.pushable-content -->
@@ -840,6 +1154,8 @@
 	<script src="assets/vendor/spectrum/spectrum.min.js"></script>
 	<script src="assets/vendor/clipboard/clipboard.min.js"></script>
 	<script src="assets/js/theme-preview-only.js"></script>
+
+
 
 	<!-- Theme Preview Only CSS -->
 	<link href="assets/vendor/spectrum/spectrum.min.css" rel="stylesheet">

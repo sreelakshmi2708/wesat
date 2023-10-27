@@ -2723,3 +2723,50 @@ li.pa-related-item > a.pa-big-related-a:hover .pa-big-related-cover {
 .owl-nav button:focus {
 	outline: none;
 }
+.slide {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+.slide1 {
+    background-image: url("assets/images/mou");
+}
+ 
+.slide2 {
+    background-image: url("assets/images/iedc.jpeg");
+}
+ 
+.slide3 {
+    background-image: url("assets/images/astro1.jpeg");
+}
+ 
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+ 
+#arrow-left {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 20px;
+}
+ 
+#arrow-right {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 20px;
+}

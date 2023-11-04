@@ -2790,6 +2790,48 @@ section.pa-main-footer {
  * 22. Media Queries
  * =================
  */
+/*Project-Info*/
+/* CSS for responsive design */
+@media (max-width: 767px) {
+	.container1-wrapper {
+	  margin-top: 30px;
+	  grid-gap: 100px; /* Adjust the grid gap as needed */
+	  grid-template-columns: 1fr; /* Change to a single column layout */
+	}
+  
+	.container2 img {
+	  width: 130%;
+	}
+  
+	.mission-statement {
+		top: 0; /* Adjust the top position to your preference */
+		left: 0; /* Adjust the left position to your preference */
+		transform: none; /* Remove the transform */
+		text-align: justify;
+	}
+  
+	/* Adjust the styling of the h2 and p elements as needed */
+	.mission-statement h2 {
+		margin: 67px;
+		padding: 0px;
+	  font-size: 18px; /* Adjust the font size for smaller screens */
+	}
+  
+	.mission-statement p {
+	  
+	  margin: 67px;
+	  font-size: 14px; /* Adjust the font size for smaller screens */
+	  padding: 0px; /* Add padding to the left and right of the paragraph */
+	}
+  }
+  @media (max-width: 600px) {
+	
+	.mission-statement p{
+		margin-top: 60px; /* Adjust the margin-top value as needed */
+	  }
+  }
+	
+
 
 @media all and (max-width: 767px) {
 

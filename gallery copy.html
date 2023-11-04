@@ -71,20 +71,20 @@
    Start of custom Webflow CSS
    ========================================================================== */
 .mask {
-  display: inline-block;
+  display: block;
   overflow: visible;
-  width: 50%;
+  width: 100%;
   /* margin-right: auto;
   margin-left: auto; */
   text-align: center;
-  height:100px;
+  height:100%;
 }
 
 .slide {
   width: 100%;
   text-align: center;
   cursor: -webkit-grab;
-  height:300px;
+  height:100%;
 }
 
 .slider {
@@ -100,8 +100,10 @@
 }
 
 .img {
-  display: inline-block;
-  height:300px;
+  display:grid;
+  height:1000%;
+  width:800%;
+
 }
 
 .left-arrow {
@@ -401,11 +403,11 @@ function removeClass(){
 
 		<!-- Hero Section
 		================================================== -->
-		<!-- <section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back position-relative" style="background-image: url(assets/images/news1.jpg);">
+		 <!-- <section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back position-relative" style="background-image: url(assets/images/news1.jpg);"> -->
 
-			 <div class="pa-absolute-fill pa-gradient-back-v1"></div> -->
+			 <!-- <div class="pa-absolute-fill pa-gradient-back-v1"></div> 
 
-			<!-- <div class="container pa-supercontainer text-left">
+			 <div class="container pa-supercontainer text-left">
 				<div class="row pa-hero-typed-text">
 					<div class="col-12 fadeInDelay03Duration10">
 						<div class="typed-text">
@@ -413,12 +415,12 @@ function removeClass(){
 								<span class="typed-cursor">|</span> 
 							</span>
 						</div> -->
-						<!-- <h4 class="pa-h4-v1 pa-bright">Very slick blogatorium with particle engine</h4> -->
-					<!-- </div>
+						<!-- <h4 class="pa-h4-v1 pa-bright">Very slick blogatorium with particle engine</h4>
+					</div>
 				</div>
 			</div>
 
-		</section>   -->
+		</section>    -->
 		<!-- /.pa-hero -->
 
 			
@@ -644,29 +646,60 @@ function removeClass(){
 					<!-- Blog Feed Column
 					================================================== -->
 				<div class="section w-section">
-					<div class="slider w-slider" data-animation="slide" data-duration="500" data-hide-arrows="1" data-infinite="1" style="width:100%">
-						<div class="mask w-slider-mask">
-							<div class="slide w-slide">
-								<img class="img" data-ix="new-interaction-2" src="assets/images/iedc.jpeg">
+					<div class="slider w-slider" data-animation="slide" data-duration="500" data-hide-arrows="1" data-infinite="1" style="background-image: url(assets/images/cont3.jpg);width: 100%;" >
+						<div class="mask w-slider-mask"style="width:500px;height:100%">
+							<div class="slide w-slide" style="width:800px;height:100%">
+								<img class="img" data-ix="new-interaction-2" src="assets/images/iedc.jpeg" style="width:100%;height:100%" >
 							</div>
 						<div class="slide w-slide">
-							<img class="img" data-ix="new-interaction-2" src="assets/images/imp1 cr.jpeg">
+							<img class="img" data-ix="new-interaction-2" src="assets/images/imp1 cr.jpeg" >
 						</div>
 						<div class="slide w-slide">
-							<img class="img" data-ix="new-interaction-2" src="assets/images/imp2 cr.jpeg">
+							<img class="img" src="assets/images/team2.jpg" >
+						</div>
+
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/v1.png" >
 						</div>
 						<div class="slide w-slide">
-							<img class="img" data-ix="new-interaction" src="assets/images/imp2.jpeg">
+							<img class="img" data-ix="new-interaction-2" src="assets/images/imp2 cr.jpeg" >
+						</div>
+						
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/team3.jpg" >
 						</div>
 						<div class="slide w-slide">
 							<img class="img" src="assets/images/imp3 cr.jpeg">
 						</div>
+						
 						<div class="slide w-slide">
-							<img class="img" src="assets/images/imp3.jpeg">
+							<img class="img" src="assets/images/cropped mou.png" >
 						</div>
 						<div class="slide w-slide">
-							<img class="img" src="assets/images/Imp1.jpeg">
+							<img class="img" src="assets/images/cropped SpaceUp4.jpeg" >
 						</div>
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/cropped SpceUp.jpeg" >
+						</div>
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/Work1.jpeg" >
+						</div>
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/skl2.jpeg" >
+						</div>
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/Work2.jpeg" >
+						</div>
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/team cr.jpg" >
+						</div>
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/team1.jpg" >
+						</div>
+						<div class="slide w-slide">
+							<img class="img" src="assets/images/skl1 cr.jpeg" >
+						</div>
+						
 					</div>
 					<div class="left-arrow w-slider-arrow-left">
 						<div class="w-icon-slider-left">

@@ -55,9 +55,11 @@
 	</script>
      <style>
 
-
+/* body {
+    overflow-x: hidden;
+} */
 .image-section {
-    background: url('./assets/images/ab.jpg') center center no-repeat;
+    /* background: url('./assets/images/ab.jpg') center center no-repeat; */
     background-size: cover;
     height: 70vh;
     position: relative;
@@ -76,26 +78,30 @@
     grid-gap: 24px; /* Adjust the gap between containers as needed */
     padding: 20px;
     position: relative; /* Add this to make the container stack above the image */
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .container1 {
+	display: block;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border: 1px solid #000000;
     box-sizing: border-box;
     text-align: center;
-    z-index: 2;
-    margin-top: -70px;
+    /* z-index: 2; */
+    /* margin-top: -70px; */
     color: white;
+
+
 }
+
 .mission-statement {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -35%);
             text-align: center;
-            z-index: 2; /* Above the image */
+            z-index: 3; /* Above the image */
         }
 
         /* Adjust the styling of the h2 and p elements as needed */
@@ -110,7 +116,10 @@
             font-size: 16px;
         } 
 
-      
+	.pa-sticky-footer {
+    position: fixed;
+    bottom: 0;
+} 
     </style>
 
 </head>
@@ -224,8 +233,9 @@
 
 <div class="container1-wrapper">
     <div class="container1">
-        <h2>Pioneering Achievement</h2>
+        <h2>Pioneering Effort</h2>
         <p>
+            Our institute is proud to be the first institute in Kerala and the only women institute in India to accomplish this milestone. Our project has garnered extensive media coverage in a multitude of prestigious newspapers (The Hindu, The Indian Express, Manorama, etc.) and telecasted on prominent channels.
         </p>
     </div>
     <div class="container1">

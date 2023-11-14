@@ -56,10 +56,12 @@
 	</script>
 	<style>
 		body{
-			display: flex;
+			/* display: flex;  */
 			justify-content: center;
 			align-items: center;
 			min-height: 100vh;
+			width: 100%;
+			margin: 0;
 		}
 
 		.swiper-container{
@@ -70,11 +72,21 @@
 
 		.swiper-slide{
 			background-position: center;
-			background-size: color;
-			width:700px;
+			background-size: cover;
+			width:500px;
 			height:500px;
 			background: #000;
 		}
+
+		@media (max-width: 600px) {
+      		.swiper-slide {
+				width: 100%;
+        		height: auto; 
+     		 }
+    		}
+
+   	 	
+      	
 
 	</style>
 	
@@ -162,7 +174,7 @@
 
 		<!-- Hero Section
 		================================================== -->
-		 <section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back position-relative" style="background-image: url(assets/images/cont1.jpg);"> 
+		 <section id="top" class="pa-hero pa-blog-hero pa-centered-section pa-image-back position-relative" style="background-image: url(assets/images/data4.jpg);"> 
 
 			 <div ></div> 
 
@@ -184,7 +196,7 @@
 
 		<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="assets/images/30 lakhs.jpg" style="width:700px;	height:500px;"></div>
+					<div class="swiper-slide"><img src="assets/images/30 lakhs.jpg" style="height: 300px;width:300px" ></div>
 					<div class="swiper-slide"></div>
 					<div class="swiper-slide"></div>
 					<div class="swiper-slide"></div>

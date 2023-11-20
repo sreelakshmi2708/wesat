@@ -60,6 +60,7 @@
 			justify-content: center;
 			align-items: center;
 			min-height: 100vh;
+			margin: 0;
 		}
 
 		.swiper-container{
@@ -70,12 +71,19 @@
 
 		.swiper-slide{
 			background-position: center;
-			background-size: color;
-			width:700px;
-			height:500px;
+			background-size: cover;
+			display: flex;
+			width: 700px; 
+       		height: 500px;
 			background: #000;
 		}
 
+		@media (min-width: 320px) {
+        .swiper-slide {
+            width: 700px;
+            height: 500px;
+        }
+    }
 	</style>
 	
 </head>
@@ -184,8 +192,8 @@
 
 		<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="assets/images/iedc (1).jpeg" style="width:700px;	height:500px;"></div>
-					<div class="swiper-slide"><img src="assets/images/imp1 cr (1).jpeg" style="width:700px;	height:500px;"></div>
+					<div class="swiper-slide"><img src="assets/images/iedc (1).jpeg"style="width:700px;	height:500px;"> </div>
+					<div class="swiper-slide"><img src="assets/images/imp1 cr (1).jpeg"style="width:700px;	height:500px;"></div>
 					<div class="swiper-slide"><img src="assets/images/team2 (1).jpg" style="width:700px;	height:500px;"></div>
 					<div class="swiper-slide"><img src="assets/images/v1.png" style="width:700px;	height:500px;"></div>
 					<div class="swiper-slide"><img src="assets/images/imp2 cr (1).jpeg" style="width:700px;	height:500px;"></div>
@@ -235,7 +243,7 @@
 					<div class="swiper-slide"></div> -->
 				</div>
 
-				<div class="swiper-pagination"></div>
+				<!-- <div class="swiper-pagination"></div> -->
 		</div>
 		
 			
@@ -289,6 +297,10 @@
 			pagination:{
 				el:'.swiper-pagination',
 			},
+			autoplay: {
+                delay: 3000, // Delay in milliseconds (1 minute in this case)
+                disableOnInteraction: false, // Continue autoplay even when user interacts with the slider
+            },
 		});
 	</script>
 

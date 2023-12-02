@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html{
+	height: 100%;
+	width:100%;
+}
+
+
+.canvas{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.rocket{
+	position: relative;
+	animation: ranimate 0.2s ease infinite;
+}
+
+
+.rocket img{
+	display: inline-block;
+	width: 50px;
+	height: auto;
+}
+
+
+@keyframes ranimate{
+	0%,100%{
+		transform: translateY(-1px);
+	}
+
+	50%{
+		transform: translateY(1px);
+	}
+}
+
+.rocket:before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 60%;
+	top: 100%;
+	background: linear-gradient(#e67e22, #f39c12 10%, transparent);
+	filter: blur(2px);
+}
+
+.rocket:after{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 60%;
+	top: 100%;
+	right: 0;
+	background: linear-gradient(#e67e22, #f39c12 10%, transparent);
+	filter: blur(2px);
+}
+
+.rocket span{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 80%;
+	top: 100%;
+	left: 17px;
+	background: linear-gradient(#e67e22, #f39c12 10%, transparent);
+	filter: blur(2px);
+}
+
+
+.canvas i{
+	position: absolute;
+	top: -150px;
+	background: rgba(255,255,255,.5);
+	animation: sanimate linear infinite;
+}
+
+
+@keyframes sanimate{
+	0%{
+		transform: translateY(0);
+	}
+
+	100%{
+		transform: translateY(100vh);
+	}
+}
+
+
+
+

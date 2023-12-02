@@ -3,16 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/count2.css">
+	<script type="text/javascript" src="assets/js/count3.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Falcon heavy rocket with HTML CSS JS</title>
 </head>
-<body>
+<body style="background: #222;">
 	<div class="canvas">
 		<div class="rocket">
 			<img src="assets/images/pslv8.png"><span></span>
+			
 		</div>
+		
 	</div>
-
+     
+	
 
 	<script>
 		function stars() {
@@ -41,6 +46,22 @@
 		}
 
 		stars();
+
+		
 	</script>
+
+   <div id="content" >
+	<h1 style="color: aliceblue;font-size: 34px;" >Launching Website in <span id="timer" style="color:blueviolet;">10</span> seconds.</h1>
+	<script>
+		var count = 10;
+		var timer = setInterval(function() {
+			count--;
+			document.getElementById("timer").innerHTML = count;
+			if (count === 0) {
+				redirectToPage();
+			}
+		}, 1000);
+	</script>
+</div>
 </body>
 </html>

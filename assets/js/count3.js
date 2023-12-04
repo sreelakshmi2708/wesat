@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
 	curtain.classList.add('show-content');
 	setTimeout(function() {
 		curtain.style.display = 'none';
-	}, 1500);
+	}, 1000);
 });
 
 function redirectToPage() {

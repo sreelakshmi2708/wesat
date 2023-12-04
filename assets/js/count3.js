@@ -8,5 +8,5 @@ window.addEventListener('load', function() {
 });
 
 function redirectToPage() {
-    window.location.href = "https://wesat.in/";
+    window.location.href = "https://sreelakshmi2708.github.io/wesat/index.html";
   }

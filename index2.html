@@ -18,6 +18,7 @@
  -->
 	<title>WESAT</title>
 
+	
 	<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
 	<link rel="icon" type="image/png" href="assets/favicon/favicon.png">
 
@@ -42,6 +43,32 @@
 
 	<!-- Theme Preview Only CSS -->
 	<link href="assets/css/theme-preview-color-styler.css" rel="stylesheet">
+
+
+
+<!-- CSS
+         ================================================== -->
+   <!-- Bootstrap -->
+   <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+   <!-- FontAwesome -->
+   <link rel="stylesheet" href="CSS/font-awesome.min.css">
+   <!-- Animation -->
+   <link rel="stylesheet" href="CSS/animate.css">
+   <!-- magnific -->
+   <link rel="stylesheet" href="CSS/magnific-popup.css">
+   <!-- carousel -->
+   <link rel="stylesheet" href="CSS/owl.carousel.min.css">
+   <!-- isotop -->
+   <link rel="stylesheet" href="CSS/isotop.css">
+   <!-- ico fonts -->
+   <link rel="stylesheet" href="CSS/xsIcon.css">
+   <!-- Template styles-->
+   <link rel="stylesheet" href="CSS/style.css">
+   <!-- Responsive styles-->
+   <link rel="stylesheet" href="CSS/responsive.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 	<!-- jQuery -->
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -77,6 +104,52 @@
             display: block;
             margin: 0 0; /* Center the logo horizontally */
         }
+
+	
+.ccanvas{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #222;
+	/* display: flex; */
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+@keyframes ranimate{
+	0%,100%{
+		transform: translateY(-1px);
+	}
+
+	50%{
+		transform: translateY(1px);
+	}
+}
+
+
+
+
+
+.ccanvas i {
+	 position: absolute; 
+	top: -150px;
+	background: rgba(255,255,255,.5);
+	animation: sanimate linear infinite;
+}
+
+
+@keyframes sanimate{
+	0%{
+		transform: translateY(0);
+	}
+
+	100%{
+		transform: translateY(100vh);
+	}
+}
 	</style>
 
 </head>
@@ -231,93 +304,57 @@
 
 	<!-- Hero Section
 	================================================== -->
-	<section id="top" class="pa-hero pa-centered-section pa-full-height pa-image-back pushable-content" style="background-image: url(assets/images/hero-dark.jpg);">
-		<!-- First Part - First Row -->
-		<div class="pa-absolute-fill pa-gradient-back-v1" style="opacity: 0;"></div>
-		<div id="particles-js"></div>
 	
-		<div class="container pa-hero-content text-center" style="text-align: center;justify-content: center;">
-			<div class="row pa-hero-typed-text">
-				<div class="col-12">
-					
-					<div class="typed-text mega-typed">
-						<span class="animated-text-effect"></span>
-						<h2 class="pa-h2-v2-hero-subhead pa-white">WESAT - First Ever Women Engineered Satellite</h2>
-					</div>
-					<!-- <a class="navbar-brand" href="index.html">
 
-					<div class="logo-container">
-							
-						<img class="logo" alt="" src="assets/images/ol.png">
-					</div>
-					</a> -->
 
-				</div>
-			</div>
+
+	<section class="hero-area centerd-item"> <div class="canvas"></div>
+		<div class="banner-item" style="background-image:url(assets/video/bg.gif) ;background-size: cover;height:100%">
+		   <div class="container">
+			  <div class="ccanvas"></div>
+			  <div class="row"> <div class="ccanvas"></div>
+				 <div class="col">
+					<div class="banner-content-wrap text-center">
+					   <h1 class="banner-title" style="margin: 20px; align-items: center;"> WESAT LAUNCH COUNTDOWN</h1>
+					   <h2 class="banner-info" style="font-size: 25px;"><b>WESAT will be launched by PSLV C-58, the 60th PSLV Mission of ISRO.</b></h2><br><br><br>
+
+					   <div class="countdown">
+						  <div class="counter-item">
+							 <i class="icon icon-ring-1Asset-1"></i>
+							 <span class="days">00</span>
+							 <div class="smalltext">Days</div>
+
+						  </div>
+						  <div class="counter-item">
+							 <i class="icon icon-ring-4Asset-3"></i>
+							 <span class="hours">00</span>
+							 <div class="smalltext">Hours</div>
+						  </div>
+						  <div class="counter-item">
+							 <i class="icon icon-ring-3Asset-2"></i>
+							 <span class="minutes">00</span>
+							 <div class="smalltext">Minutes</div>
+						  </div>
+						  <div class="counter-item">
+							 <i class="icon icon-ring-4Asset-3"></i>
+							 <span class="seconds">00</span>
+							 <div class="smalltext">Seconds</div>
+						  </div>
+					   </div>
+					   <!-- Countdown end -->
+				   
+				   </div >
+			   </div >
+		   </div >
+	   </div >
+   </div >
 			
-			
-					
-				
-	</section>
-	
-	<section id="contact-us" class="pa-contact-us" data-parallax="scroll" data-speed="0" style="background-color: #080509;">
+   </section>
 
-		
-          <hr class="pa-divider pa-gradient-back-v2 mb-4"
-		  <div class="row">
-			<!-- <div class="col-12">
-				<div class="d-flex pa-ads-wrapper mb-2">
-					<div class="pa-ads">
-						<img alt="" src="assets/images/sample-slot-1.jpg">
-					</div>
-				</div>
-		  </div>
-		</div>	    
-		<div class="container">  -->
-		<hr class="pa-divider pa-gradient-back-v2 mb-4"> 
-		
-		<div class="container"> 
 
-			<!-- Section Header -->
-         
-			<div class="row text-center">
-                <!-- <hr class="pa-divider pa-gradient-back-v2 mb-4"> -->
-				<!-- Contact Info -->
-						<div class="col-12 col-md-6 col-xl-5 offset-xl-1 pa-contact-info d-flex">
-					
-					<div class="pa-glass pa-left">
-						<br>
-						<span class="pa-portfolio-thumb-hover-icon"><i class="fa fa-rocket"></i></span>
-						<h1 class="pa-h1-v3 pa-bright fadeInDelay03Duration10"><span class="pa-portfolio-thumb-hover-icon"></span>India's First Satellite Payload developed by a Women-only Institute led by an all-women team</h1>
-						
-					</div>
-				</div>
 
-                <div class="col-12 col-md-6 col-xl-5 pa-contact-form d-flex justify-content-end">
-					<div class="pa-glass pa-right">
-						<br>
-						<span class="pa-portfolio-thumb-hover-icon"><i class="fa fa-rocket"></i></span>
-						<h1 class="pa-h1-v3 pa-bright fadeInDelay03Duration10"><span class="pa-portfolio-thumb-hover-icon"></span>First Student Satellite under the Govt. Of Kerala</h1>
-                        
-					</div>
-				</div>
-             
-				
 
-                
-			</div>
-		</div>
 
-        
-
-        <!-- Decoration -->
-        <!-- <hr class="pa-divider pa-gradient-back-v2 mb-4"> -->
-
-    </div>
-
-	</section> 
-		
-		
 	<!-- /.pa-hero -->
 
 	<!-- CTA Section
@@ -714,19 +751,6 @@
 	<!-- Footer
 	================================================== -->
 	<footer>
-
-		
-		<div class="row">
-            <div class="col-12">
-                <div class="d-flex pa-ads-wrapper mb-2">
-                    <div class="pa-ads">
-                        <img alt="" src="assets/images/sample-slot-1.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-		<!-- <hr class="pa-divider pa-gradient-back-v2 mb-4">  -->
 		<div class="row">
 
 			<div class="col-12">
@@ -737,7 +761,6 @@
 				</div>
 			</div>
 		</div>	
-
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center my-2 pt-5 pb-4">
@@ -783,6 +806,67 @@
 
 	<!-- Theme Preview Only CSS -->
 	<link href="assets/vendor/spectrum/spectrum.min.css" rel="stylesheet">
+
+
+
+	<script>
+		function stars() {
+		   let count = 50;
+		   let canvas = document.querySelector('.canvas');
+  
+		   let i = 0;
+  
+  
+		   while(i < count){
+			  let star = document.createElement('i');
+			  let x = Math.floor(Math.random() * window.innerWidth);
+			  let duration = Math.random() * 1;
+			  let h = Math.random() * 100;
+  
+			  star.style.left = x + 'px';
+			  star.style.width = 1 + 'px'
+			  star.style.height = h + 'px';
+  
+			  star.style.animationDuration = duration + 's';
+  
+			  canvas.appendChild(star);
+  
+			  i++;
+		   }
+		}
+  
+  
+		
+	 </script>
+	  <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap jQuery -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Counter -->
+		<script src="js/jquery.appear.min.js"></script>
+		<!-- Countdown -->
+		<script src="js/jquery.jCounter.js"></script>
+		<!-- magnific-popup -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+		<!-- Waypoints -->
+		<script src="js/wow.min.js"></script>
+		<!-- isotop -->
+		<script src="js/isotope.pkgd.min.js"></script>
+  
+		<!-- Template custom -->
+		<script src="js/main.js"></script>
+		<script>
+			  AOS.init();
+		</script>
+
+
+
+
+
+
 
 </body>
 

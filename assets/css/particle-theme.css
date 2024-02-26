@@ -763,7 +763,7 @@ nav a em {
 	}
 
 	.nav-content .pa-social-section .pa-p-v1 {
-		font-size: 14px;
+		font-size: 20px;
 		margin-top: 4px;
 		line-height: 22px;
 		padding-right: 15px;
@@ -2314,7 +2314,7 @@ img.pa-services-image {
 .pa-social-icons i {
 	width: 36px;
 	height: 36px;
-	font-size: 17px;
+	font-size: 35px;
 	line-height: 36px;
 	color: #ffffff;
 	text-align: center;

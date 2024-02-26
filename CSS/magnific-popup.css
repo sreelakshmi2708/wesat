@@ -22,7 +22,7 @@
     z-index: 1043;
     position: fixed;
     outline: none !important;
-    -webkit-backface-visibility: hidden; }
+    /* -webkit-backface-visibility: hidden; */}  
 
 .mfp-container {
     text-align: center;
@@ -114,7 +114,7 @@ button.mfp-arrow {
     cursor: pointer;
     background: transparent;
     border: 0;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     display: block;
     outline: none;
     padding: 0;
@@ -388,11 +388,11 @@ img.mfp-img {
 ====== Zoom effect ======
 
 */
-.mfp-zoom-in {
+/* .mfp-zoom-in {
     /* start state */
     /* animate in */
     /* animate out */
-}
+/* }  */
 .mfp-zoom-in .mfp-with-anim {
     opacity: 0;
     transition: all 0.2s ease-in-out;

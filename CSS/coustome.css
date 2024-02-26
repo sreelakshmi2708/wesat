@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+.header-bottom-sec {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo {
+    background: url(../images/logo_svg.svg) no-repeat;
+    height: 160px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.countdown-container {
+    text-align: center;
+    font-family: 'Orbitron', 'Black Ops One', cursive;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.countdown-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+
+.countdown-time {
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.countdown-text {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 500px) {
+    .countdown {
+        margin: 10px 0px;
+    }
+
+    .countdown-time {
+        font-size: 26px;
+    }
+
+    .countdown-text {
+        font-size: 16px;
+    }
+}
+
+.schedule_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule_container .day_container {
+    width: 90%;
+}
+
+.schedule_container .day_container .day1,
+.schedule_container .day_container .day2 {
+    /* padding: 20px; */
+    background: orange;
+    max-height: 60px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+
+.schedule_container .day_container .day1.active,
+.schedule_container .day_container .day2.active {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.schedule_container .day_container .day1.active::-webkit-scrollbar,
+.schedule_container .day_container .day2.active::-webkit-scrollbar {
+    display: none;
+}
+
+
+.schedule_container .day_container .day1 .day_title,
+.schedule_container .day_container .day2 .day_title {
+    padding: 20px;
+    font-weight: 600;
+}
+
+.schedule_container .day_container .day1 .day_programm1,
+.schedule_container .day_container .day2 .day_programm2 {
+    background: black;
+    padding: 30px 20px;
+    display: flex;
+    gap: 70px;
+    flex-direction: column;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.schedule_container .day_container .day1 .day_programm1 p,
+.schedule_container .day_container .day2 .day_programm2 p {
+    color: #fff;
+}
+
+.schedule_container .day_container .day1 .day_programm1 .programm,
+.schedule_container .day_container .day2 .day_programm2 .programm {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.schedule_container .day_container .day1 .day_programm1 .programm .time,
+.schedule_container .day_container .day2 .day_programm2 .programm .time {
+    background: orange;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+}
+
+.schedule_container .day_container .day1 .day_programm1 .programm .time::after,
+.schedule_container .day_container .day2 .day_programm2 .programm .time::after {
+    content: '';
+    width: 2px;
+    height: 130px;
+    background: orange;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+}
+
+.schedule_container .day_container .day1 .day_programm1 :last-child .time::after,
+.schedule_container .day_container .day2 .day_programm2 :last-child .time::after {
+    display: none;
+}
+
+.schedule_container .day_container .day1 .day_programm1 .programm .details,
+.schedule_container .day_container .day2 .day_programm2 .programm .details {
+    width: calc(100% - 100px);
+}
+
+.schedule_container .day_container .day1 .day_programm1 .programm .details .head,
+.schedule_container .day_container .day2 .day_programm2 .programm .details .head {
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.schedule_container .day_container .day1 .day_programm1 .programm .details .desc,
+.schedule_container .day_container .day2 .day_programm2 .programm .details .desc {
+    font-size: 12px;
+}
